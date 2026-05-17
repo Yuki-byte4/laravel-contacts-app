@@ -1,3 +1,103 @@
+Contacts App – Laravel CRUD Project
+This is a small Laravel project I built to practice basic CRUD functionality. The app lets users manage simple contact information (name and phone number). I also added authentication using Laravel Jetstream so only logged‑in users can create new contacts, while anyone can view the list.
+
+What I Used
+Laravel
+
+PHP
+
+MySQL (phpMyAdmin / XAMPP)
+
+Composer
+
+Node.js + npm
+
+Laravel Jetstream (Livewire)
+
+Git & GitHub
+
+How I Set It Up
+Created the Laravel project:
+
+Code
+composer create-project laravel/laravel contacts-app
+Set up the database in .env  
+(I used a MySQL database called contacts_db)
+
+Installed Jetstream for authentication:
+
+Code
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+npm install
+npm run dev
+php artisan migrate
+Created the contacts table using a migration with fields:
+
+id
+
+name
+
+phone
+
+timestamps
+
+Built the CRUD logic:
+
+A page to list all contacts
+
+A form to add a new contact
+
+Validation for inputs
+
+Only authenticated users can create contacts
+
+Routes I Used
+/contacts – show all contacts
+
+/contacts/create – form to add a new contact (auth only)
+
+Authentication
+Jetstream handles:
+
+Registration
+
+Login / Logout
+
+Session management
+
+Protecting routes
+
+GitHub
+I used Git for version control:
+
+Initialized the repo with git init
+
+Added and committed the project
+
+Connected it to a GitHub repository
+
+Pushed everything to the main branch
+
+Result
+The project works as a simple example of:
+
+Laravel setup
+
+Database integration
+
+CRUD operations
+
+Authentication
+
+Using Git and GitHub
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
